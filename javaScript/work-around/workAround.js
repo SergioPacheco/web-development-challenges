@@ -16,6 +16,6 @@ function getEmployeeInformation(inputSalary) {
   console.log("Reimbursement Eligibility: " + reimbursement() + "\n");
 }
 
-getEmployeeInformation(10000);
+getEmployeeInformation(20000);
 getEmployeeInformation(50000);
 getEmployeeInformation(100000);
