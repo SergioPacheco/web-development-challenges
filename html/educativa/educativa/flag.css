@@ -1,0 +1,113 @@
+.flag {
+  width: 480px;
+  height: 240px;
+  background: #cf142b;
+  position: relative;
+  border: 1px solid #000;
+  margin: 50px auto 100px auto;
+}
+.flag div {
+  overflow: hidden;
+}
+.topw {
+  width: 0;
+  height: 0;
+  border-top: 111px solid #fff;
+  border-left: 222px dashed transparent;
+  border-right: 222px dashed transparent;
+}
+.leftw {
+  width: 0;
+  height: 0;
+  border-left: 222px solid #fff;
+  border-top: 111px dashed transparent;
+  border-bottom: 111px dashed transparent;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.rightw {
+  width: 0;
+  height: 0;
+  border-right: 222px solid #fff;
+  border-top: 111px dashed transparent;
+  border-bottom: 111px dashed transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.bottomw {
+  width: 0;
+  height: 0;
+  border-bottom: 111px solid #fff;
+  border-left: 222px dashed transparent;
+  border-right: 222px dashed transparent;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.topb {
+  width: 0;
+  height: 0;
+  border-top: 93px solid #00247d;
+  border-left: 186px dashed transparent;
+  border-right: 186px dashed transparent;
+  position: absolute;
+  top: 0;
+  left: 54px;
+}
+.leftb {
+  width: 0;
+  height: 0;
+  border-left: 186px solid #00247d;
+  border-top: 93px dashed transparent;
+  border-bottom: 93px dashed transparent;
+  position: absolute;
+  left: 0;
+  top: 27px;
+}
+.rightb {
+  width: 0;
+  height: 0;
+  border-right: 186px solid #00247d;
+  border-top: 93px dashed transparent;
+  border-bottom: 93px dashed transparent;
+  position: absolute;
+  right: 0;
+  top: 27px;
+}
+.bottomb {
+  width: 0;
+  height: 0;
+  border-bottom: 93px solid #00247d;
+  border-left: 186px dashed transparent;
+  border-right: 186px dashed transparent;
+  position: absolute;
+  bottom: 0;
+  left: 54px;
+}
+.horizontal {
+  width: 480px;
+  height: 48px;
+  border-top: 16px solid #fff;
+  border-bottom: 16px solid #fff;
+  background: #cf142b;
+  position: absolute;
+  left: 0;
+  top: 80px;
+}
+.vert {
+  width: 48px;
+  height: 96px;
+  border-left: 16px solid #fff;
+  border-right: 16px solid #fff;
+  background: #cf142b;
+  position: absolute;
+  left: 200px;
+}
+.vtop {
+  top: 0;
+}
+.vbottom {
+  bottom: 0;
+}
