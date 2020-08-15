@@ -19,8 +19,8 @@ In computer science, a process is the instance of a computer program that is bei
 The process.env property is an object which stores and controls information about the environment in which the process is currently running. For example, the process.env object contains a PWD property which holds a string with the directory in which the current process is located. It can be useful to have some if/else logic in a program depending on the current environment— a web application in a development phase might perform different tasks than when it’s live to users. We could store this information on the process.env. One convention is to add a property to process.env with the key NODE_ENV and a value of either production or development.
 
 ```javascript
-if (process.env.NODE_ENV === "development") {
-  console.log("Testing! Testing! Does everything work?");
+if (process.env.NODE_ENV === 'development') {
+  console.log('Testing! Testing! Does everything work?');
 }
 ```
 
@@ -30,7 +30,8 @@ The process.memoryUsage() returns information on the CPU demands of the current 
 { rss: 26247168,
   heapTotal: 5767168,
   heapUsed: 3573032,
-  external: 8772 }
+  external: 8772
+}
 ```
 
 Heap can mean different things in different contexts: a heap can refer to a specific data structure, but it can also refer to the a block of computer memory. process.memoryUsage().heapUsed will return a number representing how many bytes of memory the current process is using.
@@ -47,7 +48,7 @@ Node provides an EventEmitter class which we can access by requiring in the even
 
 ```javascript
 // Require in the 'events' core module
-let events = require("events");
+let events = require('events');
 
 // Create an instance of the EventEmitter class
 let myEmitter = new events.EventEmitter();
@@ -63,8 +64,8 @@ let newUserListener = (data) => {
 };
 
 // Assign the newUserListener function as the listener callback for 'new user' events
-myEmitter.on("new user", newUserListener);
+myEmitter.on('new user', newUserListener);
 
 // Emit a 'new user' event
-myEmitter.emit("new user", "Lily Pad"); //newUserListener will be invoked with 'Lily Pad'
+myEmitter.emit('new user', 'Lily Pad'); //newUserListener will be invoked with 'Lily Pad'
 ```
