@@ -55,7 +55,7 @@ let concepts = ['creating arrays', 'array structures', 'array manipulation'];
 - `a1.pop()` - Remove and return `last` element from array a1
 - `a1.push(obj)` - Add obj to end of array a1 and return `new length`
 - `a1.reverse()` - Reverse order of elements of array a1 in place
-- `1.sort()Sort` - the elements of array a1 in place
+- `a1.sort()` - Sortthe elements of array a1 in place
 - `a1.splice(start, deleteCount, items)` - Change content of array a1 by removing existing elements and/or adding new elements
 - `a1.unshift(obj)` - Add obj to `start` of array a1 and return new length
 
@@ -76,7 +76,6 @@ let concepts = ['creating arrays', 'array structures', 'array manipulation'];
 - We can also change an item in an array using its index, with syntax like myArray[0] = 'new string';
 - Arrays have a length property, which allows you to see how many items are in an array.
 - Arrays have their own methods, including .push() and .pop(), which add and remove items from an array, respectively.
-- Arrays have many methods that perform different tasks, such as .slice() and .shift(), you can find documentation at the Mozilla Developer Network website.
 - Some built-in methods are mutating, meaning the method will change the array, while others are not mutating. You can always check the documentation.
 - Variables that contain arrays can be declared with let or const. Even when declared with const, arrays are still mutable. However, a variable declared with const - cannot be reassigned.
 - Arrays mutated inside of a function will keep that change even outside the function.
