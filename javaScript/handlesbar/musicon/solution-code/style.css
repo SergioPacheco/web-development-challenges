@@ -1,0 +1,319 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#home {
+  color: #ffffff;
+  position: relative;
+  background: url("images/home-background.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#store, #contact {
+  color: #ffffff;
+  background-color: #f05f40;
+}
+
+a {
+  text-decoration: none;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #f05f40;
+  opacity: 0.7;
+}
+
+.header, #introduction {
+  position: relative;
+}
+
+.header {
+  padding-top: 30px;
+  min-height: 70px;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.branding {
+  float: left;
+}
+
+.branding h1 {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.nav {
+  float: right;
+}
+
+.navbar {
+  margin-top: 13px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.navbar li a {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar li a:hover, .navbar .current a {
+  color: #ffffff;
+}
+
+#introduction {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 342px;
+  margin: -171px 0 80px -500px;
+  padding: 20px;
+  text-align: center;
+}
+
+#introduction h1 {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 64px;
+  text-transform: uppercase;
+}
+
+#introduction p {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#introduction a {
+  display: inline-block;
+  padding: 16px 32px;
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #34b3a0;
+}
+
+#introduction a:hover {
+  background-color: #26A69A;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 20px;
+  font-weight: 550;
+  text-align: center;
+}
+
+#showcase {
+  margin-top: 30px;
+  margin-bottom: 80px;
+}
+
+.instrument {
+  display: inline-block;
+  width: 24%;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #212529;
+  border-radius: 5px;
+  vertical-align: top;
+  overflow: hidden;
+}
+
+.instrument img {
+  width: 100%;
+  height: auto;
+}
+
+.name {
+  text-align: center;
+}
+
+.description, .price {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.description {
+  height: 72px;
+  text-align: left;
+  overflow: auto;
+}
+
+.price {
+  font-size: 18px;
+  text-align: right;
+}
+
+.sale, .deal {
+  margin: 0;
+  color: #4DD0E1;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sale {
+  float: left;
+  clear: right;
+}
+
+.deal {
+  float: right;
+}
+
+#connection {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1000px;
+  height: 335px;
+  margin: -167.5px 0 60px -500px;
+  padding: 20px;
+  text-align: center;
+}
+
+#top h2 {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 32px;
+}
+
+#top p {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-style: italic;
+}
+
+.contact {
+  display: inline-block;
+  padding-left: 50px;
+  padding-right: 50px;
+  vertical-align: top;
+}
+
+.contact i {
+  margin-bottom: 16px;
+}
+
+.contact p {
+  margin: 0;
+}
+
+#location {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 60%;
+  }
+
+  #introduction {
+    height: 415px;
+  }
+
+  .instrument {
+    width: 48.2%;
+  }
+
+  #connection {
+    height: 351px;
+  }
+
+  .contact {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    width: 40%;
+  }
+
+  .branding, .nav {
+    float: none;
+    text-align: center;
+  }
+
+  .navbar li {
+    display: block;
+    padding: 5px 0;
+  }
+
+  #introduction {
+    height: 432px;
+  }
+
+  #introduction h1 {
+    font-size: 54px;
+  }
+
+  .instrument {
+    display: block;
+    width: 100%;
+    margin-left: unset;
+    margin-right: unset;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .price {
+    font-size: initial;
+  }
+
+  .sale, .deal {
+    font-size: initial;
+  }
+
+  #connection {
+    height: 583px;
+  }
+
+  .contact {
+    display: block;
+    padding: 10px 0;
+  }
+}
